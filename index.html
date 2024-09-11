@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página 2 - Redux con localStorage</title>
 </head>
 <body>
-    <div>HOlaa</div>
+
+    <h1>Contador en Página 2</h1>
+    <button id="increment">Incrementar</button>
+    <button id="decrement">Decrementar</button>
+    <p id="counter"></p>
+
+    <!-- Incluir Redux desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.2/redux.min.js"></script>
+
+    <script type="module">
+        // Crear la tienda (store) de Redux
+        const { createStore } = window.Redux; // Tomar la función createStore desde la ventana global
+
+        // Reducer para manejar el contador
+        function counterReducer(state = { counter: 0 }, action) {
+            switch (action.type) {
+                case 'INCREMENT':
+                    return { counter: state.counter + 1 };
+                case 'DECREMENT':
+                    return { counter: state.counter - 1 };
+                default:
+                    return state;
+            }
+        }
+
+        // Cargar el estado inicial desde localStorage
+        function loadFromLocalStorage() {
+            try {
+                const serializedState = localStorage.getItem('reduxState');
+                if (serializedState === null) return undefined; // Si no hay estado guardado
+                return JSON.parse(serializedState);
+            } catch (e) {
+                console.error("No se pudo cargar el estado", e);
+                return undefined;
+            }
+        }
+
+        // Función para guardar el estado en localStorage
+        function saveToLocalStorage(state) {
+            try {
+                const serializedState = JSON.stringify(state);
+                localStorage.setItem('reduxState', serializedState);
+            } catch (e) {
+                console.error("No se pudo guardar el estado", e);
+            }
+        }
+
+        const persistedState = loadFromLocalStorage();
+
+        const store = createStore(counterReducer, persistedState);
+
+        // Suscribirse a cambios del estado y guardarlo en localStorage
+        store.subscribe(() => {
+            saveToLocalStorage(store.getState());
+        });
+
+        // Actualizar el contador en el DOM cuando el estado cambie
+        function render() {
+            document.getElementById('counter').textContent = store.getState().counter;
+        }
+
+        // Suscribirse a los cambios de estado para actualizar el DOM
+        store.subscribe(render);
+
+        // Actualizar el DOM por primera vez
+        render();
+
+        // Manejar los clics de los botones
+        document.getElementById('increment').addEventListener('click', () => {
+            store.dispatch({ type: 'INCREMENT' });
+        });
+
+        document.getElementById('decrement').addEventListener('click', () => {
+            store.dispatch({ type: 'DECREMENT' });
+        });
+    </script>
 </body>
 </html>
