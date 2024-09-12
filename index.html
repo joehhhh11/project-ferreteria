@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 2 - Redux con localStorage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferretería XYZ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="app.js"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900 justify-between flex flex-col h-[100vh]">
 
-<div>Hola</div>
-  
+  <header class="bg-white text-white p-5 h-[10vh] flex items-center justify-between">
+    <div class="container flex items-center justify-between ">
+        <img src="./assets/images/file.png" alt="Logo" class=" h-20 w-20 rounded-full">
+      <nav>
+        <ul class="flex items-center gap-5">
+            <li><a href="#home" class="nav-link hover:text-orange-400 text-blue-800 font-bold">Inicio</a></li>
+            <li><a href="#productos" class="nav-link hover:text-orange-400 text-blue-800 font-bold">Productos</a></li>
+            <li><a href="#servicios" class="nav-link hover:text-orange-400 text-blue-800 font-bold">Servicios</a></li>
+            <li><a href="#contacto" class="nav-link hover:text-orange-400 text-blue-800 font-bold">Contacto</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="main-content" class="bg-gray-200 h-[80vh] flex flex-col items-center justify-center">
+   
+  </section>
+
+
+
+  <footer class="bg-blue-800 text-white p-5 h-[10vh] ">
+    <div class="container mx-auto text-center">
+      <div class="mt-4">
+        <a href="#" class="text-white hover:text-orange-400 mx-2">Facebook</a>
+        <a href="#" class="text-white hover:text-orange-400 mx-2">Instagram</a>
+        <a href="#" class="text-white hover:text-orange-400 mx-2">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
