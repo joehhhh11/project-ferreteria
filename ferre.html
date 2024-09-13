@@ -1,84 +1,117 @@
-<!DOCTYPE html> 
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferretería JV TERECRISS</title>
+    <title>Document</title>
     <style>
         body {
-            background-color: yellow;
             font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: black;
-            color: yellow;
+        .header {
+            background-color: #333;
+            color: #ffcc00;
             padding: 20px 0;
             text-align: center;
         }
-        header h1 {
+        .header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
-        header h2 {
-            margin: 5px 0 0;
+        .header h2 {
+            margin: 5px 0;
+            font-weight: normal;
         }
-        nav {
-            background-color: black;
+        .nav-bar {
+            background-color: #333;
+            color: #ffcc00;
+            padding: 10px 0;
             text-align: center;
         }
-        nav a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: yellow;
+        .nav-bar table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .nav-bar td {
             font-size: 20px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .nav-bar a {
+            color: #ffcc00;
             text-decoration: none;
+            padding: 0 20px;
         }
-        nav a:hover {
-            background-color: yellow;
-            color: black;
+        .nav-bar a:hover {
+            text-decoration: underline;
         }
-        main {
+        .container {
+            width: 80%;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: black;
+        .container h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: #ffcc00;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
-<body>
+<body >
 
-    <header>
-        <h1>Ferretería JV TERECRISS</h1>
-        <h2><b>Calidad en cada herramienta</b></h2>
-    </header>
+    <div class="header">
+        <CENTER><H1>Ferreteria JV TERECRISS</H1></CENTER>
+        <center><h2><b>Calidad en cada herramienta</b></h2></center>
+    </div>
+    <br>
+    <br>
+    <div class="nav-bar">
+        <table>
+            <tr>
+                <td> <a href=""> Inicio</a></td>
+                <td><a href="productos.html">Productos</a></td>
+                <td><a href="">Servicios</a></td>
+                <td><a href="">Contacto</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+    <h2>Bienvenidos a JV Terecriss</h2>
+    <p>En <b>JV Terecriss</b>, ofrecemos todo lo que necesitas para tus proyectos de construcción, reparación y mantenimiento. Contamos con una amplia variedad de herramientas, materiales y equipo para todas tus necesidades.</p>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contactos</a>
-    </nav>
+    <h2>Nuestros Productos</h2>
+    <ul>
+        <li>Herramientas manuales y eléctricas</li>
+        <li>Materiales de construcción</li>
+        <li>Pinturas y recubrimientos</li>
+        <li>Ferretería en general</li>
+    </ul>
 
-    <main>
-        <h2>Bienvenidos a JV Terecriss</h2>
-        <p>En <b>JV Terecriss</b>, ofrecemos todo lo que necesitas para tus proyectos de construcción, reparación y mantenimiento. Contamos con una amplia variedad de herramientas, materiales y equipo para todas tus necesidades.</p>
+    <h2>Contáctanos</h2>
+    <p>Visítanos en nuestra tienda o contáctanos para más información:</p>
+    <p><b>Dirección:</b> </p>
+    <p><b>Teléfono:</b> </p>
+    <p><b>Email:</b> </p>
+</div>
 
-        <h2>Nuestros Productos</h2>
-        <ul>
-            <li>Herramientas manuales y eléctricas</li>
-            <li>Materiales de construcción</li>
-            <li>Pinturas y recubrimientos</li>
-            <li>Ferretería en general</li>
-        </ul>
 
-        <h2>Contáctanos</h2>
-        <p>Visítanos en nuestra tienda o contáctanos para más información:</p>
-        <p><b>Dirección:</b> 
-        <p><b>Teléfono:</b> 
-        <p><b>Email:</b> 
-    </main>
     
 </body>
 </html>
-

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas Manuales - Ferretería JV TERECRISS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: yellow;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: left;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-item h3 {
+            color: #333;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .product-item .price {
+            color: red;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-item .cart-button {
+            background-color: yellow;
+            color: #333;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .product-item .cart-button:hover {
+            background-color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ferretería JV TERECRISS</h1>
+    <p>Calidad en cada herramienta</p>
+</header>
+
+<nav>
+    <a href="ferre.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2>Herramientas Manuales</h2>
+
+    <div class="product-list">
+        <div class="product-item">
+            <img src="assets/images/martillo.jpg" alt="Martillo">
+            <h3>Martillo</h3>
+            <p>Ideal para trabajos de carpintería y construcción.</p>
+            <p class="price">15 soles - $4.10</p>
+            <button class="cart-button">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/images/destornillador.jpg" alt="Destornillador">
+            <h3>Destornillador</h3>
+            <p>Perfecto para todo tipo de trabajos de ajuste y reparación.</p>
+            <p class="price">8 soles - $2.20</p>
+            <button class="cart-button">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/images/alicate.jpg" alt="Alicate">
+            <h3>Alicate</h3>
+            <p>Para cortar y sujetar cables y alambres con precisión.</p>
+            <p class="price">12 soles - $3.30</p>
+            <button class="cart-button">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/images/cinta.jpg" alt="Cinta Métrica">
+            <h3>Cinta Métrica</h3>
+            <p>Medidas precisas para cualquier proyecto de construcción.</p>
+            <p class="price">6 soles - $1.58</p>
+            <button class="cart-button">Agregar al Carrito</button>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/images/llave.jpg" alt="Llave Ajustable">
+            <h3>Llave Ajustable</h3>
+            <p>Herramienta esencial para trabajos de plomería y ajuste.</p>
+            <p class="price">20 soles - $5.50</p>
+            <button class="cart-button">Agregar al Carrito</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
