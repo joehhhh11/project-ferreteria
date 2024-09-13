@@ -6,34 +6,6 @@
     <title>Página 2 - Redux con localStorage</title>
 </head>
 <body>
-
-    <h1>Contador en Página 2</h1>
-    <button id="increment">Incrementar</button>
-    <button id="decrement">Decrementaasdadsr</button>
-    <p id="counter"></p>
-
-    <script type="module">
-        import store from './main.js';
-
-        // Actualizar el contador en el DOM cuando el estado cambie
-        function render() {
-            document.getElementById('counter').textContent = store.getState().counter;
-        }
-
-        // Suscribirse a los cambios de estado para actualizar el DOM
-        store.subscribe(render);
-
-        // Actualizar el DOM por primera vez
-        render();
-
-        // Manejar los clics de los botones
-        document.getElementById('increment').addEventListener('click', () => {
-            store.dispatch({ type: 'INCREMENT' });
-        });
-
-        document.getElementById('decrement').addEventListener('click', () => {
-            store.dispatch({ type: 'DECREMENT' });
-        });
-    </script>
+<div>Pagina productos</div>
 </body>
 </html>
