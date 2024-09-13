@@ -7,7 +7,7 @@ function loadPage(page) {
         pageUrl = 'ferre.html'; 
         break;
       case "#productos":
-        pageUrl = 'index2.html';
+        pageUrl = 'herramientas.html';
         break;
       case "#servicios":
         pageUrl = 'servicios.html';
