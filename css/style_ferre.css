@@ -1,0 +1,20 @@
+.header {
+    color: #f77700;
+    font-weight: bold;
+    
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.header h2 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+.containerInicio  {
+    display: flex;
+    flex-direction: column; 
+}
+.containerInicio p{
+    text-align: center;
+} 
