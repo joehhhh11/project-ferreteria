@@ -4,36 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="stylesheet" href="css/style_servicios.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style_servicios.css">
 </head>
 <body>
 
-<div class="containerxd">
-    <h2>Nuestros Servicios</h2>
-
-    <div class="service-list">
-        <div class="service-item">
-            <img src="assets/images/asesoria.jpg" alt="Asesoría Técnica">
-            <h3>Asesoría Técnica</h3>
-            <p>Brindamos asesoría profesional para elegir los mejores productos para tus proyectos.</p>
-            <button class="cta-button">Solicitar Asesoría</button>
+    <header class="bg-blue-800 text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center">
+        <div class="container flex items-center justify-between ">
+          <a href="#home">
+            <img src="./assets/images/file.png" alt="Logo" class="h-20 w-20">
+          </a>
+          <nav>
+            <ul class="flex space-x-8">
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="/herramientas.html" class="nav-link">Productos</a></li>
+                <li><a href="/servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+              </ul>
+          </nav>
         </div>
+      </header>
 
-        <div class="service-item">
-            <img src="assets/images/entrega.jpeg" alt="Entrega a Domicilio">
-            <h3>Entrega a Domicilio</h3>
-            <p>Ofrecemos servicio de entrega a domicilio para que recibas tus productos sin salir de casa.</p>
-            <button class="cta-button">Solicitar Entrega</button>
-        </div>
+<header class="bg-gray-800 text-white p-5 text-center">
+    <h1 class="text-4xl font-bold">Nuestros Servicios</h1>
+</header>
 
-        <div class="service-item">
-            <img src="assets/images/mantenimiento.jpeg" alt="Mantenimiento de Herramientas">
-            <h3>Mantenimiento de Herramientas</h3>
-            <p>Reparamos y damos mantenimiento a tus herramientas para asegurar su correcto funcionamiento.</p>
-            <button class="cta-button">Solicitar Mantenimiento</button>
+<main class="containerxd">
+    <section>
+        <h2>Nuestros Servicios</h2>
+
+        <div class="service-list">
+            <article class="service-item" data-aos="fade-up">
+                <img src="assets/images/asesoria.jpg" alt="Asesoría Técnica">
+                <h3>Asesoría Técnica</h3>
+                <p>Brindamos asesoría profesional para elegir los mejores productos para tus proyectos.</p>
+                <button class="cta-button" onclick="openModal('asesoria')">Solicitar Asesoría</button>
+            </article>
+
+            <article class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/entrega.jpeg" alt="Entrega a Domicilio">
+                <h3>Entrega a Domicilio</h3>
+                <p>Ofrecemos servicio de entrega a domicilio para que recibas tus productos sin salir de casa.</p>
+                <button class="cta-button" onclick="openModal('entrega')">Solicitar Entrega</button>
+            </article>
+
+            <article class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/mantenimiento.jpeg" alt="Mantenimiento de Herramientas">
+                <h3>Mantenimiento de Herramientas</h3>
+                <p>Reparamos y damos mantenimiento a tus herramientas para asegurar su correcto funcionamiento.</p>
+                <button class="cta-button" onclick="openModal('mantenimiento')">Solicitar Mantenimiento</button>
+            </article>
         </div>
+    </section>
+</main>
+
+<!-- Modal -->
+<div id="serviceModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <a href="contacto.html" class="cta-button">Contactar</a>
     </div>
 </div>
+
+<footer class="bg-gray-800 text-white p-4 text-center">
+    <p>© 2024 Ferretería XYZ. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="/app.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
