@@ -58,3 +58,41 @@ button:hover {
         height: 300px;
     }
 }
+.nav-link {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; 
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: white; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}
+
+nav:hover {
+    color: white; 
+
+}
