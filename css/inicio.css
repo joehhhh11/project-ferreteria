@@ -1,0 +1,149 @@
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 70px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s ease; 
+  }
+  
+  .menu li a::before,
+  .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    --tw-text-opacity: 1;
+    background-color:   rgb(22 78 99 );
+    transition: width 0.3s ease;
+  }
+  
+  .menu li a::before {
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  
+  .menu li a::after {
+    right: 50%;
+    transform: translateX(50%);
+    
+  }
+  .menu li a:hover {
+    color: rgb(22 78 99 );
+  }
+  
+  .menu li a:hover::before,
+  .menu li a:hover::after {
+    width: 100%; 
+    color: rgb(22 78 99 );
+    font-weight: bold;
+    
+  }
+  .back {
+    background-image: url("../assets/images/fondoInicio.jpg");
+    height: 100vh; 
+    width: 100vw; 
+    background-size: cover; 
+    background-position: bottom center; 
+    background-repeat: no-repeat; 
+  }
+  
+.back {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 20px;
+  color: #000; 
+  background: linear-gradient(to right, rgba(255, 255, 255, 2), rgba(255, 255, 255, 0)), 
+              url('../assets/images/fondoInicio.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: background-image 1s ease-in-out;
+}
+
+.hero-content {
+  max-width: 40%; 
+  padding-left: 150px;
+}
+
+.highlight {
+  display: inline-block;
+  background-color: #ff4523;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.oferta{
+  background: linear-gradient(to bottom right, #239b29, #12cc40);
+  width: 40vw; 
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+
+}
+.oferta:hover img {
+  transform: scale(1.1); /* Escala solo la imagen */
+}
+
+
+.oferta2{
+  background: linear-gradient(to bottom right, #6a1b9a, #9c27b0);
+  margin: 10px ;
+  width: 40vw; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+.oferta2:hover img {
+  transform: scale(1.1); /* Escala solo la imagen */
+}
+
+.contenedorOfertas{
+  display: flex;
+  justify-content: center;
+}
+.contenedorOfertas div {
+  display: flex;
+  gap: 10px;
+  text-wrap: wrap;
+  justify-content: space-evenly;
+  font-weight: semibold;
+  background-color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedorOfertas i {
+  font-size: 1.5rem;
+  color: black; /* Cambia el color del ícono */
+}
+.color{
+  background-color:#283646 ;
+  padding: 2%;
+  gap: 10px;
+
+}
+.color h3{
+  color:#3A86FF;
+}
+.color ul{
+  color:white;
+}
+.color li:hover{
+  color:#3A86FF;
+}

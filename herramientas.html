@@ -5,8 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas Manuales - Ferretería JV TERECRISS</title>
     <link rel="stylesheet" href="css/style_herramientas.css" >
+    <link rel="stylesheet" href="css/inicio.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+  >
 </head>
-<body>
+<body class="bg-gray-200 overflow-x-hidden">
+
+    <header class="bg-white text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center ">
+        <div class="container flex items-center justify-between ">
+          <a href="#home">
+            <img src="./assets/images/file.png" alt="Logo" class="h-20 w-20">
+          </a>
+          <nav>
+            <ul class="flex items-center menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+              
+          </nav>
+          <button class="bg-blue-800 rounded-lg p-2 w-48">Solicitar un pedido</button>
+        </div>
+    </header>
+
+    <div class="back">
+        <div class="hero-content gap-10">
+          <span class="highlight">Mejores precios</span>
+          <h1 class="text-5xl font-bold max-width pt-1">Súper precios en tus herramientas de trabajo</h1>
+          <p class="text-xl pt-1 pb-2">Los mejores productos de ferreteria</p>
+          <button class="bg-blue-500 p-4 rounded-lg text-white font-bold hover:bg-blue-600 transition-all duration-200 ease-in-out"> Solicitar un pedido</button>
+        </div>
+    </div>
+    <section class="contenedorOfertas w-[100vw] pt-5 pb-5">
+        <div class="flex justify-center bg-gray-100 p-10 w-[90vw] items-center shadow-md">
+            <div class="text" >
+                <i class="fas fa-store"></i> Recogida en Tienda
+              </div>
+              <div>
+                <i class="fas fa-truck"></i> Envío gratis en compras mayor a S/.100
+              </div>
+              <div>
+                <i class="fas fa-tags"></i> Precios económicos garantizados
+              </div>
+              <div>
+                <i class="fas fa-gift"></i> Ofertas de temporada
+              </div>
+        </div>
+        
+      </section>
+       
+    <div class="grid grid-cols-2 gap-10 justify-items-center gap-10">
+        <div class="oferta grid grid-cols-2 ">
+            <div class="p-10 gap-10" >
+                <p class="text-white pt-2">Ofertas de temporada</p>
+                <h2 class="text-white text-5xl pt-2 font-bold">Hasta <br> 30% menos</h2>
+                <p class="text-white pt-2 pb-10">En herramientas manuales</p>
+                <button class="text-black bg-white rounded-lg p-2 w-48 hover:bg-transparent transition-all duration-200 ease-in-out border-2">Ver catalogo</button>
+            </div>
+            <div class="relative overflow-hidden">
+                <img src="./assets/images/descuento.png" alt="Oferta" class="absolute object-cover  h-[400px] w-[400px] transition-all duration-500 ease-in-out ">
+              </div>
+ 
+        </div>
+
+        <div class="oferta2 grid grid-cols-2">
+            <div class="p-10 ">
+                <p class="text-white pt-2">Ofertas de temporada</p>
+                <h2 class="text-white pt-2 text-5xl font-bold">Hasta <br> 30% menos</h2>
+                <p class="text-white pt-2 pb-10">En herramientas manuales</p>
+                <button class="text-black bg-white rounded-lg p-2 w-48 hover:bg-transparent transition-all duration-200 ease-in-out border-2">Ver catalogo</button>
+            </div>
+            <div class="relative overflow-hidden">
+                <img
+                  src="./assets/images/worker.png"
+                  alt="Oferta"
+                  class="absolute object-cover h-[500px] w-[300px] transition-all duration-500 ease-in-out"
+                >
+              </div>
+    </div>
+</div>
+    
+      
 
 
 <div class="containerxd">
@@ -82,6 +165,81 @@
         </div>
     </div>
 </div>
+<footer class="color text-white py-10">
+  <div class="grid grid-cols-5 gap-10 p-5">
+    <div clas="flex justify-center items-center">
+      <h3 class="text-lg font-semibold mb-4">Ubicación de la tienda</h3>
+      <ul class="space-y-2">
+        <li class="flex  items-center">
+          <i class="fas fa-map-marker-alt mr-2 "></i>
+          Avenida Ferrocarril, El Agustino 15009
+        </li>
+        <li class="flex items-center">
+          <i class="fas fa-envelope mr-2 "></i>
+          <a href="mailto:ferreteria@gmail.com">ferreteria@gmail.com</a>
+        </li>
+        <li class="flex items-center">
+          <i class="fas fa-phone-alt mr-2 "></i>
+          <a href="tel:+56934765432" >+56 934765432</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+      <ul class="space-y-2">
+        <li><a href="#" >Reparación de herramientas</a></li>
+        <li><a href="#" >Limpieza de herramientas</a></li>
+        <li><a href="#" >Ajustes de herramientas</a></li>
+        <li><a href="#" >Servicio de mantenimiento</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Atención al cliente</h3>
+      <ul class="space-y-2">
+        <li><a href="#" >Contáctanos</a></li>
+        <li><a href="#" >Acerca de</a></li>
+        <li><a href="#" >Blog</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Redes sociales</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center">
+          <i class="fab fa-facebook mr-2 text-blue-500"></i>
+          <a href="#" class="hover:text-blue-500">Facebook</a>
+        </li>
+        <li class="flex items-center">
+          <i class="fab fa-instagram mr-2 text-pink-500"></i>
+          <a href="#" class="hover:text-pink-500">Instagram</a>
+        </li>
+        <li class="flex items-center">
+          <i class="fab fa-twitter mr-2 text-blue-400"></i>
+          <a href="#" class="hover:text-blue-400">Twitter</a>
+        </li>
+        <li class="flex items-center">
+          <i class="fab fa-whatsapp mr-2 text-green-500"></i>
+          <a href="#" class="hover:text-green-500">WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Información de contacto</h3>
+      <div class="mb-2 text-gray-300">Suscríbete a nuestro boletín:</div>
+      <div class="flex items-center space-x-2">
+        <input type="text" placeholder="Tu correo" class="bg-gray-800 text-white p-2 rounded-lg ">
+        <button class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 ">Enviar</button>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+
+
+  </script>
 
 </body>
 </html>
