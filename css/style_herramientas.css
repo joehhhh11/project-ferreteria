@@ -1,8 +1,4 @@
-.containerxd {
-    margin: 20px auto;
-    padding: 5%;
 
-}
 h2 {
     font-size: xx-large;
     text-align: left;
@@ -17,20 +13,6 @@ h2 {
     justify-content: space-between;
 }
 
-.product-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 30%;
-    margin-bottom: 20px;
-    padding: 15px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
-}
 
 .product-item img {
     max-width: 50%;
@@ -57,17 +39,16 @@ h2 {
 }
 
 .product-item .cart-button {
-    background-color: yellow;
-    color: #333;
+    background-color: rgb(0, 55, 255);
+    color: #f6f6f6;
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
 }
 
 .product-item .cart-button:hover {
-    background-color: #f39c12;
+    background-color: #2112f3;
 }
 .nav-link {
     position: relative;
@@ -107,3 +88,43 @@ nav:hover {
     color: white; 
 
 }
+
+
+.contenedorProductos {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: white;
+    margin-bottom: 2cm;
+    width: 90%; /* Ancho de la sección */
+    margin: 1cm auto 0 auto; /* Centra horizontalmente la sección */
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  }
+  .contenedorProductos h1{
+    text-align: center; /* Centra el texto del h1 */
+    margin-bottom: 1rem;
+  }
+  .elementos {
+    display: flex;
+    flex-direction: column; /* Organiza los productos verticalmente */
+    gap: 5mm; /* Separación de 5mm entre los productos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .elementos div{
+    
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-item img{
+        max-width: 100%;         
+        height: auto;            
+        object-fit: contain;
+      
+  }
