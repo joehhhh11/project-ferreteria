@@ -46,7 +46,7 @@ function loadPage(page) {
   window.addEventListener("load", () => {
     handleHashChange();
   });
-
+  
   function openModal(service) {
     const modal = document.getElementById('serviceModal');
     const title = document.getElementById('modalTitle');
@@ -63,8 +63,10 @@ function loadPage(page) {
         title.innerText = "Mantenimiento de Herramientas";
         description.innerText = "Te ayudamos a mantener tus herramientas en óptimas condiciones. ¡Solicita tu mantenimiento hoy mismo!";
     }
+
     modal.classList.remove('hidden');
 }
+
 function closeModal() {
     const modal = document.getElementById('serviceModal');
     modal.classList.add('hidden');

@@ -6,30 +6,56 @@
     <title>Formulario de Contacto</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style_contacto.css">
+    <link rel="stylesheet" href="css/inicio.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="map-container">
-    <header class="bg-blue-800 text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center">
-        <div class="container flex items-center justify-between ">
-          <a href="#home">
-            <img src="./assets/images/file.png" alt="Logo" class="h-20 w-20">
-          </a>
-          <nav>
-            <ul class="flex space-x-8">
-                <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                <li><a href="/herramientas.html" class="nav-link">Productos</a></li>
-                <li><a href="/servicios.html" class="nav-link">Servicios</a></li>
-                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
-              </ul>
-          </nav>
+<body class="bg-gray-200 overflow-x-hidden">
+    <header class="bg-white text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center">
+        <div class="container flex items-center justify-between">
+            <a href="#home">
+                <img src="./assets/images/file.png" alt="Logo" class="h-20 w-20">
+            </a>
+            <nav>
+                <ul class="flex items-center menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="bg-blue-800 rounded-lg p-2 w-48">Solicitar un pedido</button>
         </div>
-      </header>
+    </header>
     <div  >
         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d939.9839676732485!2d-76.95827573044208!3d-12.029491999262852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDAxJzQ2LjIiUyA3NsKwNTcnMjcuNSJX!5e1!3m2!1ses-419!2spe!4v1726263529870!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <div class="bg-gray-100 py-10 px-5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Horarios -->
+            <div>
+                <h2 class="text-xl font-bold mb-4">Horario de trabajo</h2>
+                <ul class="text-gray-700 space-y-2">
+                    <li>Lun - Vie: 7:00 - 22:00</li>
+                    <li>Sábado: 8:00 - 22:00</li>
+                    <li>Domingo: 8:00 - 15:00</li>
+                </ul>
+            </div>
+            <!-- Ubicación -->
+            <div>
+                <h2 class="text-xl font-bold mb-4">Ubicación de la tienda</h2>
+                <ul class="text-gray-700 space-y-2">
+                    <li>Av. Huarochiri, El Agustino 15009</li>
+                    <li>Email: <a href="mailto:ferreteria@gmail.com" class="text-blue-600">ferreteria@gmail.com</a></li>
+                    <li>Teléfono: <a href="tel:+56 934765432" class="text-blue-600">+56 934765432</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
     <div class="containerContacto">
         <div class="form-container">
-            <h2><strong>Mándanos un mensaje</strong></h2>
-            <p>Si tiene alguna pregunta o necesita más información, utilice el siguiente formulario para enviarnos un mensaje.</p>
+            <h1><strong>¡Estamos aquí para ayudar!</strong></h2>
+            <p>Completa el formulario con alguna duda que tengas en mente y te contestaremos lo antes posible</p>
 
             <form id="contactForm">
                 <div class="form-group">
@@ -45,13 +71,15 @@
                     <input type="email" id="correo" required>
                 </div>
                 <div class="form-group">
-                    <label for="mensaje" class="form-label">Escriba su mensaje</label>
-                    <textarea id="mensaje" rows="4" required></textarea>
+                    <label for="mensaje" class="form-label">Escriba su mensaje*</label>
+                    <textarea id="mensaje" rows="2" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
         </div>
+        <img src="assets/images/cc.jpg" alt="Imagen" class="img-estilo">
     </div>
+    
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
@@ -64,5 +92,73 @@
         });
     </script>
 
+    <footer class="color text-white py-10">
+        <div class="grid grid-cols-5 gap-10 p-5">
+        <div clas="flex justify-center items-center">
+            <h3 class="text-lg font-semibold mb-4">Ubicación de la tienda</h3>
+            <ul class="space-y-2">
+            <li class="flex  items-center">
+                <i class="fas fa-map-marker-alt mr-2 "></i>
+                Avenida Ferrocarril, El Agustino 15009
+            </li>
+            <li class="flex items-center">
+                <i class="fas fa-envelope mr-2 "></i>
+                <a href="mailto:ferreteria@gmail.com">ferreteria@gmail.com</a>
+            </li>
+            <li class="flex items-center">
+                <i class="fas fa-phone-alt mr-2 "></i>
+                <a href="tel:+56934765432" >+56 934765432</a>
+            </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+            <ul class="space-y-2">
+            <li><a href="#" >Reparación de herramientas</a></li>
+            <li><a href="#" >Limpieza de herramientas</a></li>
+            <li><a href="#" >Ajustes de herramientas</a></li>
+            <li><a href="#" >Servicio de mantenimiento</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3 class="text-lg font-semibold mb-4">Atención al cliente</h3>
+            <ul class="space-y-2">
+            <li><a href="#" >Contáctanos</a></li>
+            <li><a href="#" >Acerca de</a></li>
+            <li><a href="#" >Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-4">Redes sociales</h3>
+            <ul class="space-y-2">
+            <li class="flex items-center">
+                <i class="fab fa-facebook mr-2 text-blue-500"></i>
+                <a href="#" class="hover:text-blue-500">Facebook</a>
+            </li>
+            <li class="flex items-center">
+                <i class="fab fa-instagram mr-2 text-pink-500"></i>
+                <a href="#" class="hover:text-pink-500">Instagram</a>
+            </li>
+            <li class="flex items-center">
+                <i class="fab fa-twitter mr-2 text-blue-400"></i>
+                <a href="#" class="hover:text-blue-400">Twitter</a>
+            </li>
+            <li class="flex items-center">
+                <i class="fab fa-whatsapp mr-2 text-green-500"></i>
+                <a href="#" class="hover:text-green-500">WhatsApp</a>
+            </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-4">Información de contacto</h3>
+            <div class="mb-2 text-gray-300">Suscríbete a nuestro boletín:</div>
+            <div class="flex items-center space-x-2">
+            <input type="text" placeholder="Tu correo" class="bg-gray-800 text-white p-2 rounded-lg ">
+            <button class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 ">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>
