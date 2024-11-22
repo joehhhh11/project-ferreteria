@@ -37,7 +37,7 @@ function loadPage(page) {
   }
   
   function handleHashChange() {
-    const page = window.location.hash || "#home";
+    const page = window.location.hash || "./inicio.html";
     loadPage(page);
   }
   
