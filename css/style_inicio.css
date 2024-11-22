@@ -107,13 +107,7 @@
   .cuadro.vision { background: #ff9900; }
   
   /* Footer */
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: auto;
-  }
+  
   #sobre-nosotros {
     background-color: #549e73; /* Cambia el color de fondo a tu color deseado */
     padding-top: 50px;
