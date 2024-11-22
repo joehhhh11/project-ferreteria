@@ -13,7 +13,7 @@
 }
 
 .form-container {
-    display: grid; /* Usamos grid aquí también */
+    display: grid; 
     grid-template-rows: auto;
     gap: 10px; 
     border-radius: 10px;

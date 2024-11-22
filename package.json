@@ -1,6 +1,19 @@
 {
   "dependencies": {
     "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "project-ferreteria": "file:",
     "redux": "^5.0.1"
-  }
+  },
+  "name": "project-ferreteria",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000r\u0000o\u0000j\u0000e\u0000c\u0000t\u0000-\u0000f\u0000e\u0000r\u0000r\u0000e\u0000t\u0000e\u0000r\u0000i\u0000a\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -1,0 +1,116 @@
+:root {
+    --color-primario: #c0392b;
+    --color-secundario: #2471a3;
+    --color-terciario: #28b463;
+    --color-fondo: #f0b27a;
+  }
+  
+  /* General */
+  body {
+    background-color: var(--color-fondo);
+    animation: gradient 10s infinite ease;
+  }
+  
+  header {
+    background-color: var(--color-secundario);
+    
+  }
+  
+  header a, button, .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button, .cta-button {
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  button:hover, .cta-button:hover, .nav-link:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+  }
+  
+  /* Valores, Misión y Visión */
+  .value-card {
+    background: rgb(238, 15, 15);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Carrusel */
+  .carousel-inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-inner img {
+    width: 80%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-inner img:hover {
+    transform: scale(0.8);
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes gradient {
+    0%, 100% { background: linear-gradient(135deg, #00b4d8, #0077b6); }
+    50% { background: linear-gradient(135deg, #f76c6c, #f8b400); }
+  }
+  
+  section {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Hover Titles */
+  h1, h2, h3 {
+    transition: color 0.3s ease;
+  }
+  
+  h1:hover, h2:hover, h3:hover {
+    color: #d35400;
+  }
+  
+  /* Cuadros */
+  .cuadro {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cuadro:hover {
+    transform: translateY(-5px);
+    background-color: #28b463;
+  }
+  
+  .cuadro.valor { background: #1f6feb; }
+  .cuadro.mision { background: #28a745; }
+  .cuadro.vision { background: #ff9900; }
+  
+  /* Footer */
+  
+  #sobre-nosotros {
+    background-color: #549e73; /* Cambia el color de fondo a tu color deseado */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  

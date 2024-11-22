@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style_herramientas.css" >
     <link rel="stylesheet" href="css/inicio.css" >
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     rel="stylesheet"
@@ -21,10 +20,10 @@
           </a>
           <nav>
             <ul class="flex items-center menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/inicio.html">Inicio</a></li>
+                <li><a href="/herramientas.html">Productos</a></li>
+                <li><a href="/servicios.html">Servicios</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
               </ul>
               
           </nav>
@@ -91,7 +90,68 @@
 </div>
     
 
- <!-- CONTENEDOR PRODUCTOS-->
+<section class="search-bar w-11/12 sm:w-96 p-6 bg-white rounded-xl shadow-lg mx-auto mt-8">
+  <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Buscar Productos</h2>
+
+  <!-- Campo de búsqueda por nombre -->
+  <div class="mb-4">
+    <input 
+      type="text" 
+      id="nameSearch" 
+      class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300"
+      placeholder="Buscar por nombre..." 
+      onkeyup="filterProducts()">
+  </div>
+
+  <!-- Filtro por precio -->
+  <div class="mb-4">
+    <label for="priceRange" class="block text-gray-600 font-medium text-lg mb-2">Rango de precio</label>
+    <input 
+      type="range" 
+      id="priceRange" 
+      min="0" 
+      max="100" 
+      value="100" 
+      step="1" 
+      class="w-full bg-gray-200 rounded-lg h-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      oninput="filterProducts()">
+    <div class="flex justify-between text-sm text-gray-600 mt-2">
+      <span>0</span>
+      <span id="priceValue">100</span>
+    </div>
+  </div>
+
+  <!-- Filtro por categoría -->
+  <div class="mb-4">
+    <label for="categorySelect" class="block text-gray-600 font-medium text-lg mb-2">Categoría</label>
+    <select id="categorySelect" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300" onchange="filterProducts()">
+      <option value="">Selecciona una categoría</option>
+      <option value="Herramientas manuales">Herramientas manuales</option>
+      <option value="Accesorios">Accesorios</option>
+      <option value="Electrónica">Electrónica</option>
+      <option value="Jardinería">Jardinería</option>
+    </select>
+  </div>
+
+  <!-- Filtro por descripción -->
+  <div class="mb-4">
+    <label for="descriptionSearch" class="block text-gray-600 font-medium text-lg mb-2">Buscar en descripción</label>
+    <input 
+      type="text" 
+      id="descriptionSearch" 
+      class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300"
+      placeholder="Buscar en descripción..." 
+      onkeyup="filterProducts()">
+  </div>
+</section>
+
+<!-- Productos -->
+<section class="contenedorProductos pt-4 pb-4">
+  <h1 class="text-3xl font-bold text-center text-indigo-600 mb-6"></h1>
+  <div class="elementos grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="productList">
+    <!-- Productos se insertan dinámicamente aquí -->
+  </div>
+</section>
 
  <section class="contenedorProductos pt-5 pb-5 shadow-md p-10">
   <h1 class="text-4xl font-bold max-width pt-1">NUESTROS PRODUCTOS</h1>
@@ -99,17 +159,17 @@
    
   
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg">
-        <img src="assets/herramientas/martillo.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
-        <h3 class="text-lg font-semibold mt-2">Martillo</h3>
-        <p class="text-gray-600">Ideal para trabajos de carpintería y construcción.</p>
-        <p class="price font-bold text-gray-800">15 soles - $4.10</p>
-        <button class="cart-button  px-4 py-2 mt-2 transition duration-300 ease-in-out">
-          Agregar al Carrito
-        </button>
-      </div>
+    <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg" data-category="Herramientas manuales">
+      <img src="assets/herramientas/martillo.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
+      <h3 class="text-lg font-semibold mt-2">Martillo</h3>
+      <p class="text-gray-600">Ideal para trabajos de carpintería y construcción.</p>
+      <p class="price font-bold text-gray-800">15 soles - $4.10</p>
+      <button class="cart-button px-4 py-2 mt-2 transition duration-300 ease-in-out">
+        Agregar al Carrito
+      </button>
+    </div>
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg" data-category="Herramientas manuales">
         <img src="assets/herramientas/cinta.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -119,7 +179,7 @@
         </button>
       </div>
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg" data-category="Herramientas manuales">
         <img src="assets/herramientas/alicate.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Alicate</h3>
         <p class="text-gray-600">Para cortar y sujetar cables y alambres con precisión.</p>
@@ -129,7 +189,7 @@
         </button>
       </div>
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg" data-category="Electrónica">
         <img src="assets/herramientas/amoladora.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Amoladora</h3>
         <p class="text-gray-600">Herramienta esencial para cortar, desbastar y pulir materiales duros como metal y piedra.</p>
@@ -139,7 +199,7 @@
         </button>
       </div>
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg " data-category="Herramientas manuales">
         <img src="assets/herramientas/destornillador.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Destornillador</h3>
         <p class="text-gray-600">Perfecto para todo tipo de trabajos de ajuste y reparación.</p>
@@ -151,7 +211,7 @@
 
 
       <!--PRODUCTOS ADICIONALES-->
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden " data-category="Herramientas manuales">
         <img src="assets/herramientas/desarmadores.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -162,7 +222,7 @@
       </div>
 
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden " data-category="Herramientas manuales">
         <img src="assets/herramientas/limas.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -173,7 +233,7 @@
       </div>
 
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden " data-category="Herramientas manuales">
         <img src="assets/herramientas/enchufe.jpg.crdownload" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -183,7 +243,7 @@
         </button>
       </div>
 
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden " data-category="Herramientas manuales">
         <img src="assets/herramientas/sierra.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -192,7 +252,7 @@
           Agregar al Carrito
         </button>
       </div>
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden "data-category="Electrónica">
         <img src="assets/herramientas/llave.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -201,7 +261,7 @@
           Agregar al Carrito
         </button>
       </div>
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden "data-category="Electrónica">
         <img src="assets/herramientas/pack1.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -210,7 +270,7 @@
           Agregar al Carrito
         </button>
       </div>
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden "data-category="Electrónica">
         <img src="assets/herramientas/taladro.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -219,7 +279,7 @@
           Agregar al Carrito
         </button>
       </div>
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden "data-category="Electrónica">
         <img src="assets/herramientas/MAN-1-2X.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -228,7 +288,7 @@
           Agregar al Carrito
         </button>
       </div>
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden "data-category="Electrónica">
         <img src="assets/herramientas/casco.jpg" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -237,7 +297,7 @@
           Agregar al Carrito
         </button>
       </div>
-      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden ">
+      <div class="product-item text-center m-4 p-4 border border-gray-200 shadow-lg hidden "data-category="Electrónica">
         <img src="assets/herramientas/22662.webp" alt="Martillo" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
         <h3 class="text-lg font-semibold mt-2">Cinta Métrica</h3>
         <p class="text-gray-600">Medidas precisas para cualquier proyecto de construcción.</p>
@@ -249,11 +309,10 @@
 
   </div>
   <br>
-  <button id="verMas" class="bg-red-500 p-4 rounded-lg text-white font-bold hover:bg-red-600 transition-all duration-200 ease-in-out"> VER TODOS LOS PRODUCTOS</button>
+  <button class="bg-red-500 p-4 rounded-lg text-white font-bold hover:bg-red-600 transition-all duration-200 ease-in-out"   onclick="window.location.href='products.html';"> VER TODO LOS PRODUCTOS</button>
 </section>
 
-<script src="js/herramientas.js"></script>
-
+<!-- FOOTER -->
 <footer class="color text-white py-10">
   <div class="grid grid-cols-5 gap-10 p-5">
     <div clas="flex justify-center items-center">
@@ -325,7 +384,7 @@
     </div>
   </div>
 </footer>
-<script>
+<script src="/js/herramientas.js">
 
 
   </script>

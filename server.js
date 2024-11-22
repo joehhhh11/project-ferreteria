@@ -1,7 +1,21 @@
 // server.js
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const app = express();
+const port = 3000;
 const path = require('path');
+const fs = require('fs');
+
+const products = JSON.parse(fs.readFileSync(path.join(__dirname, 'productos.json')));
+
+app.use(express.static('public'));
+
+app.get('/productos', (req, res) => {
+    res.json(productos);
+  });
+
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  });
 
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
@@ -47,7 +61,6 @@ const server = http.createServer((req, res) => {
     });
 });
 
-const port = 3000;
-server.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+app.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
+  });

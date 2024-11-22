@@ -1,0 +1,379 @@
+{
+  "categorias": [
+    {
+      "nombre": "Herramientas Eléctricas",
+      "productos": [
+        {
+          "id": 1,
+          "nombre": "Taladro Inalámbrico XYZ",
+          "imagen": "./assets/Productosjuntos/TaladroIn.jpg",
+          "descripcion": "Taladro inalámbrico de alto rendimiento con batería de larga duración y múltiples velocidades.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 2,
+          "nombre": "Sierra Circular ABC",
+          "imagen": "./assets/images/sierra.jpg",
+          "descripcion": "Sierra circular con motor potente y guía láser para cortes precisos.",
+          "calificacion": 4.7
+        },
+        {
+          "id": 3,
+          "nombre": "Atornillador Eléctrico 12V",
+          "imagen": "./assets/images/destornillador.jpg",
+          "descripcion": "Atornillador eléctrico compacto con batería recargable y múltiples accesorios.",
+          "calificacion": 4.6
+        },
+        {
+          "id": 4,
+          "nombre": "Amoladora Angular",
+          "imagen": "./assets/Productosjuntos/amoladora.jpg",
+          "descripcion": "Amoladora angular potente con disco de 115mm para cortar y pulir.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 5,
+          "nombre": "Multiherramienta Oscilante",
+          "imagen": "./assets/images/Multi.avif",
+          "descripcion": "Multiherramienta oscilante versátil para cortar, lijar y raspar.",
+          "calificacion": 4.6
+        },
+        {
+          "id": 6,
+          "nombre": "Taladro Percutor",
+          "imagen": "./assets/Productosjuntos/TaladroPer.jpg",
+          "descripcion": "Taladro percutor ideal para perforar materiales duros como concreto y ladrillo.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 7,
+          "nombre": "Rotomartillo SDS",
+          "imagen": "./assets/Productosjuntos/RotoMar.avif",
+          "descripcion": "Rotomartillo SDS para perforaciones profundas en concreto y mampostería.",
+          "calificacion": 4.6
+        },
+        {
+          "id": 8,
+          "nombre": "Sierra de Calar",
+          "imagen": "/assets/Productosjuntos/SierraCalar.jpeg",
+          "descripcion": "Sierra de calar con control de velocidad variable y cambio rápido de hoja.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 9,
+          "nombre": "Sierra de Mesa",
+          "imagen": "/assets/Productosjuntos/SierraMesa.avif",
+          "descripcion": "Sierra de mesa potente con guía ajustable para cortes precisos.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 10,
+          "nombre": "Taladro Compacto",
+          "imagen": "/assets/Productosjuntos/TaladroCom.webp",
+          "descripcion": "Taladro compacto y ligero ideal para trabajos en espacios reducidos.",
+          "calificacion": 4.2
+        }
+      ]
+    },
+    {
+      "nombre": "Herramientas Manuales",
+      "productos": [
+        {
+          "id": 11,
+          "nombre": "Juego de Llaves Combinadas",
+          "imagen": "/assets/Productosjuntos/LlavesCon.webp",
+          "descripcion": "Juego de llaves combinadas de acero inoxidable, resistentes y duraderas.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 12,
+          "nombre": "Martillo Profesional",
+          "imagen": "/assets/Productosjuntos/MartilloPro.webp",
+          "descripcion": "Martillo de acero con mango ergonómico para mayor comodidad y eficiencia.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 13,
+          "nombre": "Destornillador de Precisión",
+          "imagen": "/assets/Productosjuntos/DestorPre.avif",
+          "descripcion": "Destornillador de precisión ideal para trabajos delicados y electrónicos.",
+          "calificacion": 4.4
+        },
+        {
+          "id": 14,
+          "nombre": "Cinta Métrica 5m",
+          "imagen": "https://example.com/images/cinta_metrica_5m.png",
+          "descripcion": "Cinta métrica de 5 metros con carcasa resistente y fácil de leer.",
+          "calificacion": 4.1
+        },
+        {
+          "id": 15,
+          "nombre": "Nivel de Burbuja 2m",
+          "imagen": "https://example.com/images/nivel_burbuja_2m.png",
+          "descripcion": "Nivel de burbuja de 2 metros para asegurar alineaciones perfectas.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 16,
+          "nombre": "Llave de Tuerca Ajustable",
+          "imagen": "https://example.com/images/llave_tuerca_ajustable.png",
+          "descripcion": "Llave de tuerca ajustable con diseño ergonómico para un mejor agarre.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 17,
+          "nombre": "Sierra de Mano",
+          "imagen": "https://example.com/images/sierra_mano.png",
+          "descripcion": "Sierra de mano resistente para cortes precisos en madera y metal.",
+          "calificacion": 4.0
+        },
+        {
+          "id": 18,
+          "nombre": "Juego de Destornilladores",
+          "imagen": "https://example.com/images/juego_destornilladores.png",
+          "descripcion": "Juego completo de destornilladores con diferentes tamaños y tipos de punta.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 19,
+          "nombre": "Pinzas Ajustables",
+          "imagen": "https://example.com/images/pinzas_ajustables.png",
+          "descripcion": "Pinzas ajustables de alta precisión para múltiples aplicaciones.",
+          "calificacion": 4.1
+        },
+        {
+          "id": 20,
+          "nombre": "Cúter Profesional",
+          "imagen": "https://example.com/images/cuter_profesional.png",
+          "descripcion": "Cúter con hoja retráctil y mango ergonómico para cortes precisos.",
+          "calificacion": 4.0
+        }
+      ]
+    },
+    {
+      "nombre": "Accesorios",
+      "productos": [
+        {
+          "id": 21,
+          "nombre": "Lámpara de Trabajo LED",
+          "imagen": "https://example.com/images/lampada_trabajo_led.png",
+          "descripcion": "Lámpara de trabajo LED portátil con múltiples niveles de brillo.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 22,
+          "nombre": "Caja de Herramientas",
+          "imagen": "https://example.com/images/caja_herramientas.png",
+          "descripcion": "Caja de herramientas resistente con múltiples compartimentos para organización.",
+          "calificacion": 4.4
+        },
+        {
+          "id": 23,
+          "nombre": "Batería Recargable Pro",
+          "imagen": "https://example.com/images/bateria_recargable_pro.png",
+          "descripcion": "Batería recargable de alta capacidad compatible con diversas herramientas eléctricas.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 24,
+          "nombre": "Cargador Universal",
+          "imagen": "https://example.com/images/cargador_universal.png",
+          "descripcion": "Cargador universal para baterías de herramientas eléctricas con múltiples adaptadores.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 25,
+          "nombre": "Kit de Brocas 50 piezas",
+          "imagen": "https://example.com/images/kit_brocas_50.png",
+          "descripcion": "Kit de brocas de alta calidad para taladros, incluye diferentes tamaños y tipos.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 26,
+          "nombre": "Guantes de Trabajo",
+          "imagen": "https://example.com/images/guantes_trabajo.png",
+          "descripcion": "Guantes de trabajo resistentes con protección para las manos y agarre mejorado.",
+          "calificacion": 4.1
+        },
+        {
+          "id": 27,
+          "nombre": "Protector Auditivo",
+          "imagen": "https://example.com/images/protector_auditivo.png",
+          "descripcion": "Protector auditivo cómodo y eficaz para proteger tus oídos del ruido.",
+          "calificacion": 4.0
+        },
+        {
+          "id": 28,
+          "nombre": "Gafas de Seguridad",
+          "imagen": "https://example.com/images/gafas_seguridad.png",
+          "descripcion": "Gafas de seguridad con protección contra impactos y rayos UV.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 29,
+          "nombre": "Máscara Respiratoria",
+          "imagen": "https://example.com/images/mascara_respiratoria.png",
+          "descripcion": "Máscara respiratoria reutilizable con filtros de alta eficiencia.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 30,
+          "nombre": "Cinta Aislante Pro",
+          "imagen": "https://example.com/images/cinta_aislante_pro.png",
+          "descripcion": "Cinta aislante de alta resistencia para trabajos eléctricos y mecánicos.",
+          "calificacion": 4.4
+        }
+      ]
+    },
+    {
+      "nombre": "Equipos de Medición",
+      "productos": [
+        {
+          "id": 31,
+          "nombre": "Multímetro Digital",
+          "imagen": "https://example.com/images/multimetro_digital.png",
+          "descripcion": "Multímetro digital preciso para medir voltaje, corriente y resistencia.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 32,
+          "nombre": "Nivel Láser 360°",
+          "imagen": "https://example.com/images/nivel_laser_360.png",
+          "descripcion": "Nivel láser 360° para alineaciones y mediciones precisas en múltiples direcciones.",
+          "calificacion": 4.6
+        },
+        {
+          "id": 33,
+          "nombre": "Calibrador Vernier",
+          "imagen": "https://example.com/images/calibrador_vernier.png",
+          "descripcion": "Calibrador Vernier de alta precisión para mediciones exactas en milímetros y pulgadas.",
+          "calificacion": 4.4
+        },
+        {
+          "id": 34,
+          "nombre": "Medidor de Distancia Láser",
+          "imagen": "https://example.com/images/medidor_distancia_laser.png",
+          "descripcion": "Medidor de distancia láser rápido y preciso para proyectos de construcción y remodelación.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 35,
+          "nombre": "Termómetro Infrarrojo",
+          "imagen": "https://example.com/images/termometro_infrarrojo.png",
+          "descripcion": "Termómetro infrarrojo sin contacto para medir temperaturas de manera segura y rápida.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 36,
+          "nombre": "Osciloscopio Portátil",
+          "imagen": "https://example.com/images/osciloscopio_portatil.png",
+          "descripcion": "Osciloscopio portátil para análisis de señales electrónicas en el campo.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 37,
+          "nombre": "Medidor de Humedad",
+          "imagen": "https://example.com/images/medidor_humedad.png",
+          "descripcion": "Medidor de humedad preciso para evaluar condiciones ambientales en obras y hogares.",
+          "calificacion": 4.1
+        },
+        {
+          "id": 38,
+          "nombre": "Detector de Metales",
+          "imagen": "https://example.com/images/detector_metales.png",
+          "descripcion": "Detector de metales portátil ideal para encontrar objetos metálicos en diferentes superficies.",
+          "calificacion": 4.0
+        },
+        {
+          "id": 39,
+          "nombre": "Nivel Digital",
+          "imagen": "https://example.com/images/nivel_digital.png",
+          "descripcion": "Nivel digital con pantalla LCD para lecturas precisas y fáciles de interpretar.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 40,
+          "nombre": "Medidor de Presión de Aire",
+          "imagen": "https://example.com/images/medidor_presion_aire.png",
+          "descripcion": "Medidor de presión de aire confiable para neumáticos y sistemas de aire comprimido.",
+          "calificacion": 4.2
+        }
+      ]
+    },
+    {
+      "nombre": "Seguridad",
+      "productos": [
+        {
+          "id": 41,
+          "nombre": "Casco de Seguridad Pro",
+          "imagen": "https://example.com/images/casco_seguridad_pro.png",
+          "descripcion": "Casco de seguridad resistente con protección contra impactos y diseño cómodo.",
+          "calificacion": 4.5
+        },
+        {
+          "id": 42,
+          "nombre": "Botas de Trabajo",
+          "imagen": "https://example.com/images/botas_trabajo.png",
+          "descripcion": "Botas de trabajo duraderas con suela antideslizante y protección contra impactos.",
+          "calificacion": 4.4
+        },
+        {
+          "id": 43,
+          "nombre": "Protector de Rodillas",
+          "imagen": "https://example.com/images/protector_rodillas.png",
+          "descripcion": "Protector de rodillas ergonómico para mayor comodidad y seguridad en el trabajo.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 44,
+          "nombre": "Arnés de Seguridad",
+          "imagen": "https://example.com/images/arnes_seguridad.png",
+          "descripcion": "Arnés de seguridad ajustable para trabajos en altura con múltiples puntos de anclaje.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 45,
+          "nombre": "Chaleco Reflectante",
+          "imagen": "https://example.com/images/chaleco_reflectante.png",
+          "descripcion": "Chaleco reflectante de alta visibilidad para trabajos en condiciones de baja luz.",
+          "calificacion": 4.1
+        },
+        {
+          "id": 46,
+          "nombre": "Guantes de Seguridad",
+          "imagen": "https://example.com/images/guantes_seguridad.png",
+          "descripcion": "Guantes de seguridad resistentes a cortes y abrasiones para proteger tus manos.",
+          "calificacion": 4.3
+        },
+        {
+          "id": 47,
+          "nombre": "Protección Facial Completa",
+          "imagen": "https://example.com/images/proteccion_facial.png",
+          "descripcion": "Protección facial completa para evitar lesiones por partículas voladoras.",
+          "calificacion": 4.2
+        },
+        {
+          "id": 48,
+          "nombre": "Tapones para Oídos",
+          "imagen": "https://example.com/images/tapones_orejas.png",
+          "descripcion": "Tapones para oídos cómodos y reutilizables para proteger contra ruidos fuertes.",
+          "calificacion": 4.0
+        },
+        {
+          "id": 49,
+          "nombre": "Protector de Espalda",
+          "imagen": "https://example.com/images/protector_espalda.png",
+          "descripcion": "Protector de espalda ergonómico para prevenir lesiones durante el levantamiento de cargas.",
+          "calificacion": 4.1
+        },
+        {
+          "id": 50,
+          "nombre": "Extintor Portátil",
+          "imagen": "https://example.com/images/extintor_portatil.png",
+          "descripcion": "Extintor portátil de clase ABC para combatir incendios comunes en el lugar de trabajo.",
+          "calificacion": 4.4
+        }
+      ]
+    }
+  ]
+}
