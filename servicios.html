@@ -6,57 +6,64 @@
     <title>Servicios</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style_servicios.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <header class="bg-blue-800 text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center">
+    <header class="bg-white text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center ">
         <div class="container flex items-center justify-between ">
           <a href="#home">
             <img src="./assets/images/file.png" alt="Logo" class="h-20 w-20">
           </a>
           <nav>
-            <ul class="flex space-x-8">
-                <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                <li><a href="/herramientas.html" class="nav-link">Productos</a></li>
-                <li><a href="/servicios.html" class="nav-link">Servicios</a></li>
-                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+            <ul class="flex items-center menu">
+                <li><a href="/ferre.html">Inicio</a></li>
+                <li><a href="/herramientas.html">Productos</a></li>
+                <li><a href="/servicios.html">Servicios</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
               </ul>
+              
           </nav>
+          <button class="bg-blue-800 rounded-lg p-2 w-48">Solicitar un pedido</button>
         </div>
-      </header>
+    </header>
 
-<header class="bg-gray-800 text-white p-5 text-center">
-    <h1 class="text-4xl font-bold">Nuestros Servicios</h1>
-</header>
-
-<main class="containerxd">
-    <section>
-        <h2>Nuestros Servicios</h2>
-
-        <div class="service-list">
-            <article class="service-item" data-aos="fade-up">
-                <img src="assets/images/asesoria.jpg" alt="Asesoría Técnica">
-                <h3>Asesoría Técnica</h3>
-                <p>Brindamos asesoría profesional para elegir los mejores productos para tus proyectos.</p>
-                <button class="cta-button" onclick="openModal('asesoria')">Solicitar Asesoría</button>
-            </article>
-
-            <article class="service-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/images/entrega.jpeg" alt="Entrega a Domicilio">
-                <h3>Entrega a Domicilio</h3>
-                <p>Ofrecemos servicio de entrega a domicilio para que recibas tus productos sin salir de casa.</p>
-                <button class="cta-button" onclick="openModal('entrega')">Solicitar Entrega</button>
-            </article>
-
-            <article class="service-item" data-aos="fade-up" data-aos-delay="400">
-                <img src="assets/images/mantenimiento.jpeg" alt="Mantenimiento de Herramientas">
-                <h3>Mantenimiento de Herramientas</h3>
-                <p>Reparamos y damos mantenimiento a tus herramientas para asegurar su correcto funcionamiento.</p>
-                <button class="cta-button" onclick="openModal('mantenimiento')">Solicitar Mantenimiento</button>
-            </article>
+    <header class="header-services">
+        <div class="header-content">
+            <h1 class="text-5xl font-bold">Nuestros Servicios</h1>
+            <p class="text-xl">Descubre todo lo que podemos ofrecer para tus proyectos.</p>
         </div>
-    </section>
-</main>
+    </header>
+
+    <main class="containerxd">
+        <section>
+            <h2 class="section-title">Nuestros Servicios</h2>
+    
+            <div class="service-list">
+                <article class="service-item" data-aos="fade-up">
+                    <img src="/imagenesservicios/tecnicopersona.png" alt="Asesoría Técnica" class="service-image">
+                    <h3 class="service-title">Asesoría Técnica</h3>
+                    <p class="service-description">Brindamos asesoría profesional para elegir los mejores productos para tus proyectos.</p>
+                    <button class="cta-button" onclick="openModal('asesoria')">Solicitar Asesoría</button>
+                </article>
+    
+                <article class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/imagenesservicios/personadelivery.png" alt="Entrega a Domicilio" class="service-image">
+                    <h3 class="service-title">Entrega a Domicilio</h3>
+                    <p class="service-description">Ofrecemos servicio de entrega a domicilio para que recibas tus productos sin salir de casa.</p>
+                    <button class="cta-button" onclick="openModal('entrega')">Solicitar Entrega</button>
+                </article>
+    
+                <article class="service-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="/imagenesservicios/herramientasservicios.png" alt="Mantenimiento de Herramientas" class="service-image">
+                    <h3 class="service-title">Mantenimiento de Herramientas</h3>
+                    <p class="service-description">Reparamos y damos mantenimiento a tus herramientas para asegurar su correcto funcionamiento.</p>
+                    <button class="cta-button" onclick="openModal('mantenimiento')">Solicitar Mantenimiento</button>
+                </article>
+            </div>
+        </section>
+    </main>
 
 <!-- Modal -->
 <div id="serviceModal" class="modal hidden">
@@ -68,12 +75,106 @@
     </div>
 </div>
 
-<footer class="bg-gray-800 text-white p-4 text-center">
-    <p>© 2024 Ferretería XYZ. Todos los derechos reservados.</p>
-</footer>
+<section class="py-20 bg-gradient-to-r from-teal-500 via-yellow-500 to-orange-500">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-extrabold text-black mb-12">¿Por qué Comprar en La Ferretería JV Terecriss?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      
+        <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <img src="/imagenesservicios/calidad.png" alt="Calidad" class="w-20 h-20 mx-auto mb-4">
+          <h3 class="text-3xl font-semibold text-yellow-600 mb-4">Productos de Alta Calidad</h3>
+          <p class="text-gray-700 text-lg">Ofrecemos las mejores marcas y herramientas con calidad garantizada para que tu trabajo sea siempre el mejor.</p>
+        </div>
+       
+        <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <img src="/imagenesservicios/entrega-rapida.png" alt="Envío rápido" class="w-20 h-20 mx-auto mb-4">
+          <h3 class="text-3xl font-semibold text-yellow-600 mb-4">Envíos Rápidos y Seguros</h3>
+          <p class="text-gray-700 text-lg">Tu compra llegará en tiempo récord y en perfectas condiciones para que no pierdas ni un minuto.</p>
+        </div>
+     
+        <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <img src="/imagenesservicios/pngwing.com (1).png" alt="Soporte" class="w-20 h-20 mx-auto mb-4">
+          <h3 class="text-3xl font-semibold text-yellow-600 mb-4">Atención al Cliente de 6:30 am a 10 pm</h3>
+          <p class="text-gray-700 text-lg">Siempre estamos disponibles para ti. Resolvemos todas tus dudas y necesidades con rapidez y profesionalismo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="color text-white py-10">
+    <div class="grid grid-cols-5 gap-10 p-5">
+      <div clas="flex justify-center items-center">
+        <h3 class="text-lg font-semibold mb-4">Ubicación de la tienda</h3>
+        <ul class="space-y-2">
+          <li class="flex  items-center">
+            <i class="fas fa-map-marker-alt mr-2 "></i>
+            Avenida Ferrocarril, El Agustino 15009
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-envelope mr-2 "></i>
+            <a href="mailto:ferreteria@gmail.com">ferreteria@gmail.com</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-phone-alt mr-2 "></i>
+            <a href="tel:+56934765432" >+56 934765432</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+        <ul class="space-y-2">
+          <li><a href="#" >Reparación de herramientas</a></li>
+          <li><a href="#" >Limpieza de herramientas</a></li>
+          <li><a href="#" >Ajustes de herramientas</a></li>
+          <li><a href="#" >Servicio de mantenimiento</a></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Atención al cliente</h3>
+        <ul class="space-y-2">
+          <li><a href="#" >Contáctanos</a></li>
+          <li><a href="#" >Acerca de</a></li>
+          <li><a href="#" >Blog</a></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Redes sociales</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <i class="fab fa-facebook mr-2 text-blue-500"></i>
+            <a href="#" class="hover:text-blue-500">Facebook</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fab fa-instagram mr-2 text-pink-500"></i>
+            <a href="#" class="hover:text-pink-500">Instagram</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fab fa-twitter mr-2 text-blue-400"></i>
+            <a href="#" class="hover:text-blue-400">Twitter</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fab fa-whatsapp mr-2 text-green-500"></i>
+            <a href="#" class="hover:text-green-500">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Información de contacto</h3>
+        <div class="mb-2 text-gray-300">Suscríbete a nuestro boletín:</div>
+        <div class="flex items-center space-x-2">
+          <input type="text" placeholder="Tu correo" class="bg-gray-800 text-white p-2 rounded-lg ">
+          <button class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 ">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="/app.js"></script>
+<script src="/logicaservicios.js"></script>
 <script>
     AOS.init();
 </script>
