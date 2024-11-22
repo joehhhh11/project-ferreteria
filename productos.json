@@ -6,7 +6,7 @@
         {
           "id": 1,
           "nombre": "Taladro Inalámbrico XYZ",
-          "imagen": "./assets/Productosjuntos/TaladroIn.jpg",
+          "imagen": "./assets/Productosjuntos/HE/TaladroIn.jpg",
           "descripcion": "Taladro inalámbrico de alto rendimiento con batería de larga duración y múltiples velocidades.",
           "calificacion": 4.5,
           "precio": 99.99
@@ -14,7 +14,7 @@
         {
           "id": 2,
           "nombre": "Sierra Circular ABC",
-          "imagen": "./assets/images/sierra.jpg",
+          "imagen": "./assets/Productosjuntos/HE/SierraCir.webp",
           "descripcion": "Sierra circular con motor potente y guía láser para cortes precisos.",
           "calificacion": 4.7,
           "precio": 149.99
@@ -22,7 +22,7 @@
         {
           "id": 3,
           "nombre": "Atornillador Eléctrico 12V",
-          "imagen": "./assets/images/destornillador.jpg",
+          "imagen": "./assets/Productosjuntos/HE/AtorElec.jpg",
           "descripcion": "Atornillador eléctrico compacto con batería recargable y múltiples accesorios.",
           "calificacion": 4.6,
           "precio": 89.99
@@ -30,7 +30,7 @@
         {
           "id": 4,
           "nombre": "Amoladora Angular",
-          "imagen": "./assets/Productosjuntos/amoladora.jpg",
+          "imagen": "./assets/Productosjuntos/HE/amoladora.jpg",
           "descripcion": "Amoladora angular potente con disco de 115mm para cortar y pulir.",
           "calificacion": 4.5,
           "precio": 119.99
@@ -46,7 +46,7 @@
         {
           "id": 6,
           "nombre": "Taladro Percutor",
-          "imagen": "./assets/Productosjuntos/TaladroPer.jpg",
+          "imagen": "./assets/Productosjuntos/HE/TaladroPer.jpg",
           "descripcion": "Taladro percutor ideal para perforar materiales duros como concreto y ladrillo.",
           "calificacion": 4.5,
           "precio": 139.99
@@ -54,7 +54,7 @@
         {
           "id": 7,
           "nombre": "Rotomartillo SDS",
-          "imagen": "./assets/Productosjuntos/RotoMar.avif",
+          "imagen": "./assets/Productosjuntos/HE/RotoMar.avif",
           "descripcion": "Rotomartillo SDS para perforaciones profundas en concreto y mampostería.",
           "calificacion": 4.6,
           "precio": 179.99
@@ -62,7 +62,7 @@
         {
           "id": 8,
           "nombre": "Sierra de Calar",
-          "imagen": "/assets/Productosjuntos/SierraCalar.jpeg",
+          "imagen": "./assets/Productosjuntos/HE/SierraCalar.jpeg",
           "descripcion": "Sierra de calar con control de velocidad variable y cambio rápido de hoja.",
           "calificacion": 4.5,
           "precio": 99.99
@@ -70,7 +70,7 @@
         {
           "id": 9,
           "nombre": "Sierra de Mesa",
-          "imagen": "/assets/Productosjuntos/SierraMesa.avif",
+          "imagen": "./assets/Productosjuntos/HE/SierraMesa.avif",
           "descripcion": "Sierra de mesa potente con guía ajustable para cortes precisos.",
           "calificacion": 4.5,
           "precio": 199.99
@@ -78,7 +78,7 @@
         {
           "id": 10,
           "nombre": "Taladro Compacto",
-          "imagen": "/assets/Productosjuntos/TaladroCom.webp",
+          "imagen": "./assets/Productosjuntos/HE/TaladroCom.webp",
           "descripcion": "Taladro compacto y ligero ideal para trabajos en espacios reducidos.",
           "calificacion": 4.2,
           "precio": 59.99
@@ -91,7 +91,7 @@
         {
           "id": 11,
           "nombre": "Juego de Llaves Combinadas",
-          "imagen": "/assets/Productosjuntos/LlavesCon.webp",
+          "imagen": "./assets/Productosjuntos/HM/LlavesCon.webp",
           "descripcion": "Juego de llaves combinadas de acero inoxidable, resistentes y duraderas.",
           "calificacion": 4.2,
           "precio": 29.99
@@ -99,7 +99,7 @@
         {
           "id": 12,
           "nombre": "Martillo Profesional",
-          "imagen": "/assets/Productosjuntos/MartilloPro.webp",
+          "imagen": "./assets/Productosjuntos/HM/MartilloPro.webp",
           "descripcion": "Martillo de acero con mango ergonómico para mayor comodidad y eficiencia.",
           "calificacion": 4.3,
           "precio": 24.99
@@ -107,7 +107,7 @@
         {
           "id": 13,
           "nombre": "Destornillador de Precisión",
-          "imagen": "/assets/Productosjuntos/DestorPre.avif",
+          "imagen": "./assets/Productosjuntos/HM/DestorPre.avif",
           "descripcion": "Destornillador de precisión ideal para trabajos delicados y electrónicos.",
           "calificacion": 4.4,
           "precio": 19.99
@@ -115,7 +115,7 @@
         {
           "id": 14,
           "nombre": "Cinta Métrica 5m",
-          "imagen": "https://example.com/images/cinta_metrica_5m.png",
+          "imagen": "./assets/Productosjuntos/HM/Cinta5.jpg",
           "descripcion": "Cinta métrica de 5 metros con carcasa resistente y fácil de leer.",
           "calificacion": 4.1,
           "precio": 6.99
@@ -123,7 +123,7 @@
         {
           "id": 15,
           "nombre": "Nivel de Burbuja 2m",
-          "imagen": "https://example.com/images/nivel_burbuja_2m.png",
+          "imagen": "./assets/Productosjuntos/HM/Burbuja.jpg",
           "descripcion": "Nivel de burbuja de 2 metros para asegurar alineaciones perfectas.",
           "calificacion": 4.2,
           "precio": 12.99
@@ -131,7 +131,7 @@
         {
           "id": 16,
           "nombre": "Llave de Tuerca Ajustable",
-          "imagen": "https://example.com/images/llave_tuerca_ajustable.png",
+          "imagen": "./assets/Productosjuntos/HM/LlaveT.jpg",
           "descripcion": "Llave de tuerca ajustable con diseño ergonómico para un mejor agarre.",
           "calificacion": 4.3,
           "precio": 18.99
@@ -139,7 +139,7 @@
         {
           "id": 17,
           "nombre": "Sierra de Mano",
-          "imagen": "https://example.com/images/sierra_mano.png",
+          "imagen": "./assets/Productosjuntos/HM/SierraM.jpg",
           "descripcion": "Sierra de mano resistente para cortes precisos en madera y metal.",
           "calificacion": 4.0,
           "precio": 15.99
@@ -147,7 +147,7 @@
         {
           "id": 18,
           "nombre": "Juego de Destornilladores",
-          "imagen": "https://example.com/images/juego_destornilladores.png",
+          "imagen": "./assets/Productosjuntos/HM/JDestor.avif",
           "descripcion": "Juego completo de destornilladores con diferentes tamaños y tipos de punta.",
           "calificacion": 4.2,
           "precio": 22.99
@@ -155,7 +155,7 @@
         {
           "id": 19,
           "nombre": "Pinzas Ajustables",
-          "imagen": "https://example.com/images/pinzas_ajustables.png",
+          "imagen": "./assets/Productosjuntos/HM/PinzasA.webp",
           "descripcion": "Pinzas ajustables de alta precisión para múltiples aplicaciones.",
           "calificacion": 4.1,
           "precio": 13.99
@@ -163,7 +163,7 @@
         {
           "id": 20,
           "nombre": "Cúter Profesional",
-          "imagen": "https://example.com/images/cuter_profesional.png",
+          "imagen": "./assets/Productosjuntos/HM/Cutter.jpg",
           "descripcion": "Cúter con hoja retráctil y mango ergonómico para cortes precisos.",
           "calificacion": 4.0,
           "precio": 7.99
@@ -176,7 +176,7 @@
         {
           "id": 21,
           "nombre": "Lámpara de Trabajo LED",
-          "imagen": "https://example.com/images/lampada_trabajo_led.png",
+          "imagen": "./assets/Productosjuntos/Ac/Led.png",
           "descripcion": "Lámpara de trabajo LED portátil con múltiples niveles de brillo.",
           "calificacion": 4.5,
           "precio": 49.99
@@ -184,7 +184,7 @@
         {
           "id": 22,
           "nombre": "Caja de Herramientas",
-          "imagen": "https://example.com/images/caja_herramientas.png",
+          "imagen": "./assets/Productosjuntos/Ac/CajaH.webp",
           "descripcion": "Caja de herramientas resistente con múltiples compartimentos para organización.",
           "calificacion": 4.4,
           "precio": 39.99
@@ -192,7 +192,7 @@
         {
           "id": 23,
           "nombre": "Batería Recargable Pro",
-          "imagen": "https://example.com/images/bateria_recargable_pro.png",
+          "imagen": "./assets/Productosjuntos/Ac/BateriaR.webp",
           "descripcion": "Batería recargable de alta capacidad compatible con diversas herramientas eléctricas.",
           "calificacion": 4.3,
           "precio": 29.99
@@ -200,7 +200,7 @@
         {
           "id": 24,
           "nombre": "Cargador Universal",
-          "imagen": "https://example.com/images/cargador_universal.png",
+          "imagen": "./assets/Productosjuntos/Ac/CargaM.webp",
           "descripcion": "Cargador universal para baterías de herramientas eléctricas con múltiples adaptadores.",
           "calificacion": 4.2,
           "precio": 19.99
@@ -208,7 +208,7 @@
         {
           "id": 25,
           "nombre": "Kit de Brocas 50 piezas",
-          "imagen": "https://example.com/images/kit_brocas_50.png",
+          "imagen": "./assets/Productosjuntos/Ac/KitBro.webp",
           "descripcion": "Kit de brocas de alta calidad para taladros, incluye diferentes tamaños y tipos.",
           "calificacion": 4.5,
           "precio": 24.99
@@ -216,7 +216,7 @@
         {
           "id": 26,
           "nombre": "Guantes de Trabajo",
-          "imagen": "https://example.com/images/guantes_trabajo.png",
+          "imagen": "./assets/Productosjuntos/Ac/Guantes.jpg",
           "descripcion": "Guantes de trabajo resistentes con protección para las manos y agarre mejorado.",
           "calificacion": 4.1,
           "precio": 12.99
@@ -224,7 +224,7 @@
         {
           "id": 27,
           "nombre": "Protector Auditivo",
-          "imagen": "https://example.com/images/protector_auditivo.png",
+          "imagen": "./assets/Productosjuntos/Ac/Auditivo.jpg",
           "descripcion": "Protector auditivo cómodo y eficaz para proteger tus oídos del ruido.",
           "calificacion": 4.0,
           "precio": 8.99
@@ -232,7 +232,7 @@
         {
           "id": 28,
           "nombre": "Gafas de Seguridad",
-          "imagen": "https://example.com/images/gafas_seguridad.png",
+          "imagen": "./assets/Productosjuntos/Ac/Gafas.jpg",
           "descripcion": "Gafas de seguridad con protección contra impactos y rayos UV.",
           "calificacion": 4.3,
           "precio": 14.99
@@ -240,7 +240,7 @@
         {
           "id": 29,
           "nombre": "Máscara Respiratoria",
-          "imagen": "https://example.com/images/mascara_respiratoria.png",
+          "imagen": "./assets/Productosjuntos/Ac/Masca.jpg",
           "descripcion": "Máscara respiratoria reutilizable con filtros de alta eficiencia.",
           "calificacion": 4.2,
           "precio": 11.99
@@ -248,7 +248,7 @@
         {
           "id": 30,
           "nombre": "Cinta Aislante Pro",
-          "imagen": "https://example.com/images/cinta_aislante_pro.png",
+          "imagen": "./assets/Productosjuntos/Ac/CintaIs.jpg",
           "descripcion": "Cinta aislante de alta resistencia para trabajos eléctricos y mecánicos.",
           "calificacion": 4.4,
           "precio": 5.99
