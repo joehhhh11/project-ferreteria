@@ -91,68 +91,7 @@
 </div>
     
 
-<section class="search-bar w-11/12 sm:w-96 p-6 bg-white rounded-xl shadow-lg mx-auto mt-8">
-  <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">Buscar Productos</h2>
 
-  <!-- Campo de búsqueda por nombre -->
-  <div class="mb-4">
-    <input 
-      type="text" 
-      id="nameSearch" 
-      class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300"
-      placeholder="Buscar por nombre..." 
-      onkeyup="filterProducts()">
-  </div>
-
-  <!-- Filtro por precio -->
-  <div class="mb-4">
-    <label for="priceRange" class="block text-gray-600 font-medium text-lg mb-2">Rango de precio</label>
-    <input 
-      type="range" 
-      id="priceRange" 
-      min="0" 
-      max="100" 
-      value="100" 
-      step="1" 
-      class="w-full bg-gray-200 rounded-lg h-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-      oninput="filterProducts()">
-    <div class="flex justify-between text-sm text-gray-600 mt-2">
-      <span>0</span>
-      <span id="priceValue">100</span>
-    </div>
-  </div>
-
-  <!-- Filtro por categoría -->
-  <div class="mb-4">
-    <label for="categorySelect" class="block text-gray-600 font-medium text-lg mb-2">Categoría</label>
-    <select id="categorySelect" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300" onchange="filterProducts()">
-      <option value="">Selecciona una categoría</option>
-      <option value="Herramientas manuales">Herramientas manuales</option>
-      <option value="Accesorios">Accesorios</option>
-      <option value="Electrónica">Electrónica</option>
-      <option value="Jardinería">Jardinería</option>
-    </select>
-  </div>
-
-  <!-- Filtro por descripción -->
-  <div class="mb-4">
-    <label for="descriptionSearch" class="block text-gray-600 font-medium text-lg mb-2">Buscar en descripción</label>
-    <input 
-      type="text" 
-      id="descriptionSearch" 
-      class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300"
-      placeholder="Buscar en descripción..." 
-      onkeyup="filterProducts()">
-  </div>
-</section>
-
-<!-- Productos -->
-<section class="contenedorProductos pt-4 pb-4">
-  <h1 class="text-3xl font-bold text-center text-indigo-600 mb-6"></h1>
-  <div class="elementos grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="productList">
-    <!-- Productos se insertan dinámicamente aquí -->
-  </div>
-</section>
 
  <section class="contenedorProductos pt-5 pb-5 shadow-md p-10">
   <h1 class="text-4xl font-bold max-width pt-1">NUESTROS PRODUCTOS</h1>

@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style_herramientas.css" >
     <link rel="stylesheet" href="css/inicio.css" >
-    <script src="app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/">  </script>
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     rel="stylesheet"
@@ -23,10 +23,10 @@
           </a>
           <nav>
             <ul class="flex items-center menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./herramientas.html">Productos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
               </ul>
               
           </nav>
@@ -38,11 +38,114 @@
  <!-- CONTENEDOR PRODUCTOS-->
 
  <main class="p-2 flex gap-10">
-  <div class="h-[100vw] bg-white w-[30vw]">
-    <div class="flex items-center justify-center">
-      <input type="text" placeholder="buscar" class=" border-2 text-white p-2 rounded-lg ">
+  <div class="h-[100vh] w-[25vw] bg-white shadow-lg p-6 ">
+    <h3 class="text-2xl font-semibold text-black mb-6">Filtros</h3>
+  
+    <!-- búsqueda -->
+    <div class="mb-6 flex items-center border-2 border-gray-300 p-2 rounded-lg">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Buscar productos"
+        class="flex-grow outline-none p-2 text-black"
+      />
+      <button class="p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- categorías  -->
+    <div class="mb-6">
+      <h4 class="text-lg font-medium text-black mb-2">Categorías</h4>
+      <div class="space-y-2">
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="text-blue-500" id="category1" />
+          <span>Herramientas Eléctricas</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="text-blue-500" id="category2" />
+          <span>Herramientas Manuales</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="text-blue-500" id="category3" />
+          <span>Accesorios</span>
+        </label>
+      </div>
+    </div>
+  
+    <!-- slider de precios -->
+    <div class="mb-6">
+      <h4 class="text-lg font-medium text-black mb-2">Rango de Precio</h4>
+      <input
+        type="range"
+        min="0"
+        max="1000"
+        value="500"
+        id="price-range"
+        class="w-full"
+      />
+      <div class="flex justify-between text-sm mt-2">
+        <span>$0</span>
+        <span>$1000</span>
+      </div>
+      <div class="mt-2 flex justify-between">
+        <input
+          type="number"
+          id="min-price"
+          class="border-2 border-gray-300 p-2 rounded-lg w-[48%]"
+          placeholder="Min"
+          value="0"
+        />
+        <input
+          type="number"
+          id="max-price"
+          class="border-2 border-gray-300 p-2 rounded-lg w-[48%]"
+          placeholder="Max"
+          value="1000"
+        />
+      </div>
+    </div>
+  
+    <!-- clasificacion -->
+    <div class="mb-6">
+      <h4 class="text-lg font-medium text-black mb-2">Clasificación</h4>
+      <div class="space-y-2">
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="todos" class="text-blue-500" checked />
+          <span>Todos</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="4.5" class="text-blue-500" />
+          <span>4.5 estrellas o más</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="4.0" class="text-blue-500" />
+          <span>4.0 estrellas o más</span>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="rating" value="3.5" class="text-blue-500" />
+          <span>3.5 estrellas o más</span>
+        </label>
+      </div>
+    </div>
+  
+    <!-- disponibilidad -->
+    <div class="mb-6">
+      <h4 class="text-lg font-medium text-black mb-2">Disponibilidad</h4>
+      <div class="flex space-x-4">
+        <button class="p-2 w-full border-2 border-gray-300 rounded-lg text-center hover:bg-gray-100">
+          Disponible
+        </button>
+        <button class="p-2 w-full border-2 border-gray-300 rounded-lg text-center hover:bg-gray-100">
+          Agotado
+        </button>
+      </div>
     </div>
   </div>
+  
   <div>
     <h2 class="text-5xl text-center font-bold text-black p-10">Comprar productos</h2>
     <div class="flex justify-end items-center">
@@ -58,6 +161,7 @@
 
   </div>
   </main>
+  
 <!-- FOOTER -->
 
 <footer class="color text-white py-10">
@@ -131,10 +235,8 @@
     </div>
   </div>
 </footer>
-<script>
+<script src="app.js"></script>
 
-
-  </script>
 
 </body>
 </html>
