@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="css/style_contacto.css">
     <link rel="stylesheet" href="css/inicio.css" >
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "xnS4R4K9SJs46jfRl",
+      });
+   })();
+</script>
 </head>
 <body class="bg-gray-200 overflow-x-hidden">
     <header class="bg-white text-white p-5 h-[10vh] w-[100vw] flex flex-col items-center justify-center">
@@ -40,7 +50,7 @@
                     <li>Domingo: 8:00 - 15:00</li>
                 </ul>
             </div>
-            <!-- Ubicación -->
+         
             <div>
                 <h2 class="text-xl font-bold mb-4">Ubicación de la tienda</h2>
                 <ul class="text-gray-700 space-y-2">
@@ -54,7 +64,7 @@
     
     <div class="containerContacto">
         <div class="form-container">
-            <h1><strong>¡Estamos aquí para ayudar!</strong></h2>
+            <h1><strong>¡Estamos aquí para ayudar!</strong></h1>
             <p>Completa el formulario con alguna duda que tengas en mente y te contestaremos lo antes posible</p>
             <form id="contactForm">
                 <div class="form-group">
@@ -79,18 +89,60 @@
         <img src="assets/images/cc.jpg" alt="Imagen" class="img-estilo">
     </div>
     
-
     <script>
+        emailjs.init("xnS4R4K9SJs46jfRl"); // Reemplaza con tu clave pública
+    
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita el envío del formulario
-            // Limpiar los campos del formulario
-            document.getElementById('nombre').value = '';
-            document.getElementById('celular').value = '';
-            document.getElementById('correo').value = '';
-            document.getElementById('mensaje').value = '';
+    
+            var nombre = document.getElementById('nombre').value.trim();
+            var celular = document.getElementById('celular').value.trim();
+            var correo = document.getElementById('correo').value.trim();
+            var mensaje = document.getElementById('mensaje').value.trim();
+    
+            if (!nombre || !celular || !correo || !mensaje) {
+                alert("Por favor, completa todos los campos.");
+                return;
+            }
+    
+            if (!/^\S+@\S+\.\S+$/.test(correo)) {
+                alert("Por favor, introduce un correo válido.");
+                return;
+            }
+    
+            if (!/^\d+$/.test(celular)) {
+                alert("El celular debe contener solo números.");
+                return;
+            }
+    
+            // Enviar correo de confirmación al cliente
+            emailjs.send("service_2sdd3sp","template_nw3id06", {
+                nombre: nombre,
+                celular: celular,
+                correo: correo,
+                mensaje: mensaje
+            }).then(function() {
+                console.log('Correo de confirmación enviado al cliente.');
+            }).catch(function(error) {
+                console.error('Error al enviar correo de confirmación:', error.text);
+            });
+    
+            // Enviar notificación a la empresa
+            emailjs.send("service_2sdd3sp","template_t43hydr", {
+                nombre: nombre,
+                celular: celular,
+                correo: correo,
+                mensaje: mensaje
+            }).then(function() {
+                alert('Mensaje enviado con éxito. Nos contactaremos contigo pronto.');
+                document.getElementById('contactForm').reset();
+            }).catch(function(error) {
+                alert('Error al enviar el mensaje a la empresa: ' + error.text);
+            });
         });
     </script>
-
+    
+    
     <footer class="color text-white py-10">
         <div class="grid grid-cols-5 gap-10 p-5">
         <div clas="flex justify-center items-center">
@@ -159,5 +211,6 @@
         </div>
         </div>
     </footer>
+
 </body>
 </html>
