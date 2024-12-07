@@ -1,11 +1,21 @@
 :root {
     --color-primario: #c0392b;
-    --color-secundario: #2471a3;
+    --color-secundario: #4682B4;
     --color-terciario: #28b463;
-    --color-fondo: #f0b27a;
+    --color-fondo: #F97316;
   }
   
   /* General */
+  #home {
+    background-color: #F97316; /* Cambia al color que prefieras */
+  }
+  #nosotros {
+    background-color: #E5E7EB;
+    padding-top: 1.5rem; /* Reduce el espacio superior */
+    padding-bottom: 1.5rem; /* Reduce el espacio inferior */
+    margin-bottom: 1rem; /* Reduce espacio entre el título y el párrafo */
+  }
+
   body {
     background-color: var(--color-fondo);
     animation: gradient 10s infinite ease;
@@ -30,7 +40,7 @@
   }
   
   button:hover, .cta-button:hover, .nav-link:hover {
-    background-color: #ff9900;
+    background-color: #28b463;
     transform: scale(1.1);
   }
   
@@ -71,8 +81,8 @@
   }
   
   @keyframes gradient {
-    0%, 100% { background: linear-gradient(135deg, #00b4d8, #0077b6); }
-    50% { background: linear-gradient(135deg, #f76c6c, #f8b400); }
+    0%, 100% { background: linear-gradient(135deg, #165ebd, #1E40AF); }
+    50% { background: linear-gradient(135deg, #FBBF24, #e2a50b); }
   }
   
   section {
@@ -85,7 +95,7 @@
   }
   
   h1:hover, h2:hover, h3:hover {
-    color: #d35400;
+    color: #2C6B35;
   }
   
   /* Cuadros */
@@ -97,20 +107,4 @@
     transition: transform 0.3s ease;
   }
   
-  .cuadro:hover {
-    transform: translateY(-5px);
-    background-color: #28b463;
-  }
-  
-  .cuadro.valor { background: #1f6feb; }
-  .cuadro.mision { background: #28a745; }
-  .cuadro.vision { background: #ff9900; }
-  
-  /* Footer */
-  
-  #sobre-nosotros {
-    background-color: #549e73; /* Cambia el color de fondo a tu color deseado */
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   
