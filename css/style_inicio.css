@@ -107,4 +107,41 @@
     transition: transform 0.3s ease;
   }
   
-  
+  /*saludo estilo*/
+   .saludo{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: coral;
+    color: black;
+    padding: 15px 20px;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    opacity: 0;
+    transform: translate(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  /*mostrar saludo*/
+  .saludo.mostrar{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /*estilo icono*/
+  .saludo .icono{
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  /*stilo button cierre*/
+  .saludo .cerrar{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .saludo .cerrar:hover {
+    color:red;
+  }
