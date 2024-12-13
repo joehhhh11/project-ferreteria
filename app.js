@@ -9,6 +9,7 @@ async function fetchProductos() {
 
     productosData = await response.json(); 
     renderProductos(productosData); 
+    loadSelectedProducts();
   } catch (error) {
     console.error("Error:", error);
     document.getElementById("productos-container").textContent =
@@ -38,10 +39,10 @@ function renderProductos(data) {
                     <div class="flex justify-between">
                     <p class="text-green-500 font-semibold">S/. ${producto.precio} </p>
                     </div>  
-                    <div class="flex items-center mt-4">
-                      <button id="decrement-${producto.id}" class="px-2 py-1 bg-red-500 text-white rounded-l">-</button>
+                    <div class="flex items-center mt-4 justify-evenly ">
+                      <button id="decrement-${producto.id}" class=" h-10 w-10 bg-red-500 text-white rounded-lg">-</button>
                       <span id="counter-${producto.id}" class="px-4 py-1 border-t border-b border-gray-300">0</span>
-                      <button id="increment-${producto.id}" class="px-2 py-1 bg-green-500 text-white rounded-r">+</button>
+                      <button id="increment-${producto.id}" class="h-10 w-10 bg-green-500 text-white rounded-lg">+</button>
                       
                     </div>
                   </div>`
@@ -64,6 +65,7 @@ function renderProductos(data) {
         count++;
         counterDisplay.textContent = count;
         updateSelectedProducts(producto, count);
+        console.log(selectedProducts);
       });
 
       decrementButton.addEventListener("click", () => {
@@ -88,7 +90,7 @@ function searchProducts(event) {
       ),
     })),
   };
-  renderProductos(filteredData); // Volver a renderizar con los productos filtrados
+  renderProductos(filteredData); // volver a renderizar con los productos filtrados
 }
 
 //actualiza los productos que se selecciona
@@ -107,7 +109,58 @@ function updateSelectedProducts(product, count) {
   } else if (count > 0) {
     selectedProducts.push({ ...product, cantidad: count });
   }
+  localStorage.setItem("selectedProducts", JSON.stringify(selectedProducts));
 }
+function loadSelectedProducts() {
+
+  const savedProducts = JSON.parse(localStorage.getItem('selectedProducts')) || []; //carga los productos que se han seleccionado o devuelve un array vacio
+
+  
+  savedProducts.forEach((producto) => { //sincroniza los datos con los productos seleccionados
+    const counterDisplay = document.getElementById(`counter-${producto.id}`);
+    if (counterDisplay) {
+      counterDisplay.textContent = producto.cantidad;
+
+      // Actualizar la variable selectedProducts
+      const existingProduct = selectedProducts.find(
+        (item) => item.id === producto.id
+      );
+      if (!existingProduct) {
+        selectedProducts.push(producto);
+      }
+    }
+  });
+}
+
+document.getElementById('cart-button').addEventListener('click', () => {
+  const cartModal = document.getElementById('cart-modal');
+  const cartDetails = document.getElementById('cart-details');
+  const cartTotal = document.getElementById('cart-total');
+
+  cartDetails.innerHTML = '';
+
+  let total = 0;
+  selectedProducts.forEach(product => {
+    const productDiv = document.createElement('div');
+    productDiv.classList.add('flex', 'justify-between', "justify-beetwen" ,'items-center', 'mb-2');
+    productDiv.innerHTML = `
+      <image src="${product.imagen}" alt="${product.nombre}" class="w-32 h-32 object-contain transition-all duration-300 ease-in-out transform hover:scale-110">
+      <span>${product.nombre} x ${product.cantidad}</span>
+      <span>S/. ${product.precio * product.cantidad}</span>
+    `;
+    cartDetails.appendChild(productDiv);
+    total += product.precio * product.cantidad;
+  });
+
+  cartTotal.textContent = `S/. ${total.toFixed(2)}`;
+
+  cartModal.classList.remove('hidden');
+});
+
+document.getElementById('close-modal').addEventListener('click', () => {
+  document.getElementById('cart-modal').classList.add('hidden');
+});
+
 
 // agregar el evento para escuchar el input del campo de búsqueda
 document.getElementById("search-input").addEventListener("input", searchProducts);
